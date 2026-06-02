@@ -1,8 +1,7 @@
 FROM nginx:1.25-alpine
 
 # Копируем конфиг как шаблон
-COPY nginx-cloudrun.conf /etc/nginx/nginx.conf.template
-
+COPY nginx-cloudrun.conf /etc/nginx/nginx.conf
 # Копируем entrypoint
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
