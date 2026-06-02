@@ -21,11 +21,4 @@ RUN mkdir -p /tmp/client_body /tmp/proxy_temp /tmp/fastcgi_temp \
 
 USER nginx
 
-# Переменные окружения — значения по умолчанию
-ENV LISTEN_PORT=8443
-ENV BACKEND_HOST=""
-ENV BACKEND_PORT=""
-
-EXPOSE 8443
-
 ENTRYPOINT ["/docker-entrypoint.sh"]
