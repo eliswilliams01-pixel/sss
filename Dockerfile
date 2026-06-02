@@ -21,4 +21,6 @@ RUN mkdir -p /tmp/client_body /tmp/proxy_temp /tmp/fastcgi_temp \
 
 USER nginx
 
+EXPOSE 8080
+
 ENTRYPOINT ["/docker-entrypoint.sh"]
